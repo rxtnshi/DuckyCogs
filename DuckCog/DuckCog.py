@@ -10,14 +10,14 @@ class DuckCog(commands.Cog):
        
 
     @commands.group(invoke_without_command=True)
-    @commands.cooldown(1, 120, commands.BucketType.user)
     async def pinger(self, ctx):
-        embed = discord.Embed(title="Ping Cog", description="Pings a role if registered within the bot.", color=0xFF5733)
-        embed.add_field(name="Options Available:", value="`staff` \n *Pings the staff role*")
+        embed = discord.Embed(title="Ping Cog", description="```Syntax: [p]pinger <subcommand>``` \nPings a role if registered within the bot.", color=0xFF5733)
+        embed.add_field(name="Options Available:", value="`scp` \n Pings the staff role")
         await ctx.send(embed=embed)
         
     @pinger.command()
-    async def staff(self, ctx):
+    @cooldown(1, 3600, BucketType.user)
+    async def scp(self, ctx):
         mentions = discord.AllowedMentions(roles=True, users=True, everyone=False)
-        await ctx.send("<@&1009509393609535548>", allowed_mentions=mentions)
+        await ctx.send("<@&556195199257411594>", allowed_mentions=mentions)
         
