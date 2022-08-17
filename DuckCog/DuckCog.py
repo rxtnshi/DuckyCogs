@@ -18,7 +18,7 @@ class DuckCog(commands.Cog):
     @commands.group(invoke_without_command=True)
     async def resetcd(self, ctx):
         embed = discord.Embed(title="RolePing Management", description="```Syntax: [p]resetcd <role>``` \nResets the cooldown of a role if registered within the bot.", color=0xFF5733)
-        embed.add_field(name="Options Available:", value="`scp` \n Resets the cooldown for the SCP:SL role")
+        embed.add_field(name="Options Available:", value="`scpsl` \n Resets the cooldown for the SCP:SL role")
         await ctx.send(embed=embed)
         
     @roleping.command()
