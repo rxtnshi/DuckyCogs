@@ -12,7 +12,7 @@ class RolePing(commands.Cog):
     @commands.group(invoke_without_command=True)
     async def roleping(self, ctx):
         """Pings a role defined in the bot. Cannot be set via a command."""
-        embed = discord.Embed(title="RolePing", description="```Syntax: [p]roleping <role>``` \nPings a role if registered within the bot.", color=0xFF5733)
+        embed = discord.Embed(title="RolePing", description="```Syntax: !roleping <role>``` \nPings a role if registered within the bot.", color=0xFF5733)
         embed.add_field(name="Options Available:", value="`scp` \n Pings the SCP:SL role")
         await ctx.send(embed=embed)
     
@@ -20,7 +20,7 @@ class RolePing(commands.Cog):
     @commands.has_role("Staff")
     async def resetcd(self, ctx):
         """Resets a cooldown on a roleping."""
-        embed = discord.Embed(title="RolePing Management", description="```Syntax: [p]resetcd <role>``` \nResets the cooldown of a role if registered within the bot.", color=0xFF5733)
+        embed = discord.Embed(title="RolePing Management", description="```Syntax: !resetcd <role>``` \nResets the cooldown of a role if registered within the bot.", color=0xFF5733)
         embed.add_field(name="Options Available:", value="`scpsl` \n Resets the cooldown for the SCP:SL role")
         await ctx.send(embed=embed)
         
