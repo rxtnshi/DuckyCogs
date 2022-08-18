@@ -2,8 +2,8 @@ from redbot.core import commands
 from discord.ext.commands import cooldown, BucketType
 import discord
 
-class DuckCog(commands.Cog):
-    """Ducky's Funni cog thing"""
+class RolePing(commands.Cog):
+    """RolePing cog for Duck Central"""
 
     def __init__(self, bot):
         self.bot = bot
