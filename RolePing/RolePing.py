@@ -25,7 +25,7 @@ class RolePing(commands.Cog):
         await ctx.send(embed=embed)
         
     @roleping.command()
-    @cooldown(1, 3600, BucketType.guild)
+    @cooldown(1, 18000, BucketType.guild)
     async def scp(self, ctx):
         mentions = discord.AllowedMentions(roles=True, users=True, everyone=False)
         await ctx.send("<@&556195199257411594>", allowed_mentions=mentions)
