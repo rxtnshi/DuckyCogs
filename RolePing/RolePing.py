@@ -1,5 +1,6 @@
 from redbot.core import commands
 from discord.ext.commands import cooldown, BucketType
+
 import discord
 
 class RolePing(commands.Cog):
@@ -8,7 +9,7 @@ class RolePing(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
        
-
+    #set co
     @commands.group(invoke_without_command=True)
     async def roleping(self, ctx):
         """Pings a role defined in the bot. Cannot be set via a command."""
@@ -36,4 +37,4 @@ class RolePing(commands.Cog):
     async def scpsl(self, ctx):
         if self.bot.get_command("roleping scp").is_on_cooldown(ctx) == True:
             self.bot.get_command("roleping scp").reset_cooldown(ctx)
-        await ctx.send("The RolePing for SCP:SL is now reset.")
+        await ctx.send("The cooldown <@&556195199257411594> for  is now reset.", allowed_mentions = discord.AllowedMentions(roles=False))
