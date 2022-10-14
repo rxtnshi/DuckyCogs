@@ -4,7 +4,7 @@ from discord.ext.commands import cooldown, BucketType
 import discord
 
 class LOA(commands.Cog):
-    """LOAPing cog for Duck Central"""
+    """LOA cog for Duck Central"""
 
     def __init__(self, bot):
         self.bot = bot
