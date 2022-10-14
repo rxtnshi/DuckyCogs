@@ -13,7 +13,7 @@ class LOA(commands.Cog):
    @commands.has_role("Staff")
    async def loa(invoke_without_command=True) {
     """LOA form"""
-    embed = discord.Embed(title="Leave of Absence Request", description="The LOA cog has been replaced with a form for easier tracking.", color=0xFF5733)
-        embed.add_field(name="To request a leave, please fill out the form below.", value="https://google.com")
+    embed = discord.Embed(title="Leave of Absence Request", description="The LOA cog has been replaced with a form for easier tracking.", color=0xFF0000)
+        embed.add_field(name="To request a leave, please click here.", value="Make sure to fill out the required information in the form in order to request a leave.", url="https://google.com")
         await ctx.send(embed=embed)
    }
