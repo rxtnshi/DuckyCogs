@@ -17,3 +17,5 @@ class LOA(commands.Cog):
         embed.add_field(name="To request a leave, please click here.", value="Make sure to fill out the required information in the form in order to request a leave.", url="https://google.com")
         await ctx.send(embed=embed)
    }
+
+   bot.add_command(loa)
