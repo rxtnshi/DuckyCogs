@@ -9,7 +9,7 @@ class LOA(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
        
-   @bot.command()
+   @commands.command()
    @commands.has_role("Staff")
    async def loa(invoke_without_command=True) {
     """LOA form"""
