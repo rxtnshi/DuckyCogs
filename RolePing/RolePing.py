@@ -9,7 +9,7 @@ class RolePing(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
        
-    #set co
+    #set command groups
     @commands.group(invoke_without_command=True)
     async def roleping(self, ctx):
         """Pings a role defined in the bot. Cannot be set via a command."""
@@ -25,6 +25,7 @@ class RolePing(commands.Cog):
         embed.add_field(name="Options Available:", value="`scpsl` \n Resets the cooldown for the SCP:SL role")
         await ctx.send(embed=embed)
         
+    # subcommands
     @roleping.command()
     @cooldown(1, 18000, BucketType.guild)
     async def scp(self, ctx):
