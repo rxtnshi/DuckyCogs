@@ -13,5 +13,5 @@ class LOA(commands.Cog):
     async def loa(self, ctx):
         """LOA form"""
         embed = discord.Embed(title="Leave of Absence Request", description="The LOA cog has been replaced with a form for easier tracking.", color=0xFF0000, url="https://forms.gle/yynHeRZVYqaohGj77")
-        embed.add_field(name="To request a leave, please click the title", value="Make sure to fill out the required information in the form in order to request a leave.")
+        embed.add_field(name="To request a leave, please click the title", value="Make sure to fill out the required information in the form in order to request a leave. AS LONG YOU HAVE THE FORM, YOU DO NOT HAVE TO KEEP RUNNING THIS COMMAND. THANK YOU.")
         await ctx.send(embed=embed)
